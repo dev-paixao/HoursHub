@@ -1,0 +1,2 @@
+# HoursHub
+ O 'Controle de Horas' é uma ferramenta eficaz para registrar e acompanhar suas horas de trabalho de maneira fácil e organizada. Registre entradas, saídas e intervalos de almoço de forma simples, e tenha acesso a um histórico completo das suas marcações anteriores. Além disso, visualize rapidamente o total de horas trabalhadas e horas extras em um período específico. Com uma interface intuitiva e recursos de cálculo precisos, o 'Controle de Horas' é o seu aliado confiável na gestão do seu tempo no trabalho.
