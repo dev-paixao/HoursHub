@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Histórico de Registros</title>
+  <link rel="stylesheet" href="assets/css/historystyle.css">
+
+  <!-- Inclua os scripts do Moment.js e Moment-Timezone -->
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.33/builds/moment-timezone-with-data.min.js"></script>
+
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-items">
+        <h1 class="logo">
+            <a href="#">Hours<span>Hub</span></a>
+        </h1>
+
+        <nav class="header-menu">
+          <button id="historyButton" class="btn-outline header-menu-item"><</button>
+            <a class="btn-outline header-menu-item" href="https://github.com/dev-paixao" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a class="btn-primary header-menu-item" href="https://www.linkedin.com/in/dev-paixao" target="_blank">
+                LinkedIn
+            </a>
+        </nav>
+
+        <div class="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+
+</header>
+
+
+<main class="conteudo">
+
+  <h1>Histórico de Registros</h1>
+
+  <!-- Tabela para exibir o histórico de registros -->
+  <table>
+    <thead>
+      <tr>
+        <th>Data</th>
+        <th>Entrada</th>
+        <th>Início do Almoço</th>
+        <th>Fim do Almoço</th>
+        <th>Saída</th>
+        <th>Horas extras</th>
+        <th>Horas trabalhadas</th>
+        <th>Excluir Registro</th>
+      </tr>
+    </thead>
+    <tbody id="historyBody"></tbody>
+  </table>
+
+</main>
+
+  <!-- Inclua o arquivo de script.js -->
+  <script src="assets/js/history.js"></script>
+
+
+</body>
+</html>

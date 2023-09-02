@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Ponto</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Inclua os scripts do Moment.js e Moment-Timezone -->
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment-timezone@0.5.33/builds/moment-timezone-with-data.min.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-items">
+        <h1 class="logo">
+          <a href="#">Hours<span>Hub</span></a>
+        </h1>
+        
+        <nav class="header-menu">
+            <a class="btn-outline header-menu-item" href="https://github.com/dev-paixao" target="_blank">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a class="btn-primary header-menu-item" href="https://www.linkedin.com/in/dev-paixao" target="_blank">
+                LinkedIn
+            </a>
+        </nav>
+
+        <div class="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+
+</header>
+
+<main class="conteudo">
+
+  <h1>Controle de Ponto</h1>
+
+  <!-- Formulário para registrar ação -->
+  <h2>Registro de Horas</h2>
+  <form id="registerForm">
+    <label for="actionType">Tipo de Ação:</label>
+    <select id="actionType" name="actionType">
+      <option value="Entrada">Entrada</option>
+      <option value="Saída">Saída</option>
+      <option value="Início do Almoço">Início do Almoço</option>
+      <option value="Fim do Almoço">Fim do Almoço</option>
+    </select>
+    <br>
+    <button type="submit">Registrar Ação</button>
+  </form>
+
+  <!-- HTML para o diálogo de erro -->
+  <div id="errorDialog" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <p id="errorText"></p>
+    </div>
+  </div>
+  
+
+  <!-- Botão para ir ao Histórico de Registros -->
+  <button id="historyButton">Histórico de Registros</button>
+</main>
+
+  <!-- Inclua o arquivo de script.js -->
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
