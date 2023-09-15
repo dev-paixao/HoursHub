@@ -3,7 +3,14 @@ const apiUrl = 'http://localhost:3000'; // Substitua pelo URL real do seu back-e
 
 document.addEventListener('DOMContentLoaded', () => {
   const historyBody = document.getElementById('historyBody');
-  const indexButton = document.getElementById('indexButton');
+  const historyButton = document.getElementById('indexButton');
+
+
+
+  indexButton.addEventListener('click', () => {
+    window.location.href = 'index.html'; // Redirecionar para a página inicial
+  });
+
 
   // Função para formatar a data
   function formatDate(dateString) {
@@ -78,9 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Exibir horas trabalhadas e horas extras da API
         const formattedDate = date.split('/').reverse().join('-'); // Converta para o formato YYYY-MM-DD
-        const responseHours = await fetch(
-          `${apiUrl}/api/total-hours?startDate=${formattedDate}&endDate=${formattedDate}`
-        );
+        const responseHours = await fetch(`${apiUrl}/api/total-hours?startDate=${formattedDate}&endDate=${formattedDate}`);
         const responseDataHours = await responseHours.json();
 
         const overtimeCell = document.createElement('td');
@@ -127,7 +132,4 @@ document.addEventListener('DOMContentLoaded', () => {
   // Carregar o histórico quando a página carregar
   loadHistory();
 
-  indexButton.addEventListener('click', () => {
-    window.location.href = 'index.html'; // Redirecionar para a página de Histórico de Registros
-  });
 });

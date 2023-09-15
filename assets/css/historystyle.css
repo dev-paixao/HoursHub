@@ -64,17 +64,24 @@ body {
   color: #007bff;
 }
 
+
+.btn-index{
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 .menu {
   display: none;
   cursor: pointer;
 }
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  margin: 4px 0;
-}
 
 .conteudo{
   display: flex;

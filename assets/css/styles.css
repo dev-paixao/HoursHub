@@ -69,13 +69,6 @@
     cursor: pointer;
   }
   
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-  }
-
   .conteudo{
     display: flex;
     flex-direction: column;
