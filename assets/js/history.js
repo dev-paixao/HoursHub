@@ -1,5 +1,5 @@
 // Defina a URL do back-end como base para as solicitações HTTP
-const apiUrl = 'http://localhost:3000'; // Substitua pelo URL real do seu back-end
+const apiUrl = 'https://ponto-control-api-tc82.vercel.app'; // Substitua pelo URL real do seu back-end
 
 document.addEventListener('DOMContentLoaded', () => {
   const historyBody = document.getElementById('historyBody');
