@@ -44,7 +44,7 @@ async function registerAction(event) {
   const actionType = document.getElementById('actionType').value;
 
   try {
-    const response = await fetch('http://localhost:3000/api/history');
+    const response = await fetch('https://ponto-control-api-tc82.vercel.app/api/history');
 
     const data = await response.json();
 
